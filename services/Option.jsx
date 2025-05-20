@@ -1,7 +1,7 @@
 import { icons } from "lucide-react";
 
 
-export const ExpertsList=[
+export const CoachingOptions=[
     {
         name:'Lecture on Topic',
         icon:'/lecture.png'
@@ -27,4 +27,19 @@ export const ExpertsList=[
         icon:'/meditation.png'
     }
 
+]
+
+export const CoachingExpert=[
+    {
+        name:'Joanna',
+        avatar:'/t1.avif'
+    },
+      {
+        name:'Sallie',
+        avatar:'/t2.jpg'
+    },
+      {
+        name:'Mathhew',
+        avatar:'/t3.jpg'
+    }
 ]
