@@ -11,9 +11,9 @@ export default defineSchema({
     Subscription: v.optional(v.string()), 
   }),
   DiscussionRoom: defineTable({
-    CoachingOption: v.string(),
+    coachingOption: v.string(),
     topic: v.string(),
-    expertNmae: v.string(),               
+    expertName: v.string(),               
     conversation: v.optional(v.any())
   }),
 });

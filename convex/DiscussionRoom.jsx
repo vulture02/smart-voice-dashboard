@@ -3,13 +3,13 @@ import { v } from "convex/values"; // ✅ Missing import added
 
 export const CreateNewRoom = mutation({
   args: {
-    coachingOptions: v.string(), // ✅ Fixed name to match frontend
+    coachingOption: v.string(), // ✅ Fixed name to match frontend
     topic: v.string(),
     expertName: v.string(),      // ✅ Fixed typo
   },
   handler: async (ctx, args) => {
     const result = await ctx.db.insert("DiscussionRoom", {
-      coachingOptions: args.coachingOptions,
+      coachingOption: args.coachingOption,
       topic: args.topic,
       expertName: args.expertName,
     });

@@ -25,7 +25,7 @@ function UserInputDialog({ children, coachingOptions }) {
     setLoading(true)
     const result=await createDiscussionRoom({
         topic:topic,
-        coachingOptions:coachingOptions?.name,
+        coachingOption:coachingOptions?.name,
         expertName:selectedExpert,
     })
     console.log(result)
