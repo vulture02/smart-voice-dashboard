@@ -5,6 +5,7 @@ import { useMutation } from 'convex/react';
 import React, { useEffect, useState } from 'react';
 import { UserContext } from './_context/UserContext';
 
+
 function AuthProvider({ children }) {
   const user = useUser();
   const CreateUser = useMutation(api.users.CreateUser);
